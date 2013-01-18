@@ -359,8 +359,7 @@
                 }
             }
 
-            if ( this.$element.val() != '' )
-                this.updateElement();
+            this.updateElement();
             this.updateWidget();
         }
 
@@ -405,7 +404,7 @@
                 } else {
                     this.setValues(defaultTime);
                 }
-                if ( this.$element.val() != '' )
+                if ( this.$element.val() == '' )
                     this.updateElement();
                 this.updateWidget();
             } else {
